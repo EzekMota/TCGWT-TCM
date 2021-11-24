@@ -1,0 +1,14 @@
+﻿.jumbotron {
+    text-align: center;
+    height: 500px;
+}
+.compartimento{
+    padding-left:20px;
+    padding-right:20px;
+}
+.navbar{
+    font-size: 18px;
+}
+ .centro{
+     margin-left:auto;
+ }
