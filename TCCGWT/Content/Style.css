@@ -1,6 +1,5 @@
-﻿.jumbotron {
-    text-align: center;
-    height: 500px;
+﻿.body{
+    font-family: Consolas;
 }
 .compartimento{
     padding-left:20px;
@@ -9,9 +8,9 @@
 .navbar{
     font-size: 18px;
 }
- .centro{
-     text-align:center;
- }
- .row{
-    
- }
+.centro {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
