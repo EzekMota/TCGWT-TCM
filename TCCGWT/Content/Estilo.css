@@ -1,0 +1,31 @@
+﻿.body {
+    font-family: Consolas;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.compartimento {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar {
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+/*.centro {
+    text-align: center;
+    margin: 10px;
+    padding: 60px;
+}*/
+
+.centro {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    padding:10px;
+}
+.row p {
+    padding-top: 25px;
+}

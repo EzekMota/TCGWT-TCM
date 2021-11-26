@@ -1,5 +1,7 @@
-﻿.body{
+﻿.body {
     font-family: Consolas;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .compartimento{
     padding-left:20px;
@@ -10,7 +12,9 @@
 }
 .centro {
     text-align: center;
-    margin: auto;
-    width: 60%;
-    padding: 10px;
+    margin: 10px;
+    padding: 60px;
 }
+
+
+

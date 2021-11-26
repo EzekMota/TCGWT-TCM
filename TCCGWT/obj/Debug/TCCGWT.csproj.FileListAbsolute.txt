@@ -159,7 +159,6 @@ T:\Usuarios\INFORMATICA\3A ETIM\GWT\camelliaft.nanahira\TCCGWT\TCCGWT\bin\pt-br\
 T:\Usuarios\INFORMATICA\3A ETIM\GWT\camelliaft.nanahira\TCCGWT\TCCGWT\bin\pt-br\System.Web.WebPages.resources.dll
 T:\Usuarios\INFORMATICA\3A ETIM\GWT\camelliaft.nanahira\TCCGWT\TCCGWT\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
 T:\Usuarios\INFORMATICA\3A ETIM\GWT\camelliaft.nanahira\TCCGWT\TCCGWT\bin\pt-br\System.Web.WebPages.Razor.resources.dll
-T:\Usuarios\INFORMATICA\3A ETIM\GWT\camelliaft.nanahira\TCCGWT\TCCGWT\obj\Debug\TCCGWT.csprojAssemblyReference.cache
 T:\Usuarios\INFORMATICA\3A ETIM\GWT\camelliaft.nanahira\TCCGWT\TCCGWT\obj\Debug\TCCGWT.csproj.CoreCompileInputs.cache
 T:\Usuarios\INFORMATICA\3A ETIM\GWT\camelliaft.nanahira\TCCGWT\TCCGWT\obj\Debug\TCCGWT.csproj.CopyComplete
 T:\Usuarios\INFORMATICA\3A ETIM\GWT\camelliaft.nanahira\TCCGWT\TCCGWT\obj\Debug\TCCGWT.dll
