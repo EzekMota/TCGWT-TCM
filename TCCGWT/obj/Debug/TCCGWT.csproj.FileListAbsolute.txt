@@ -163,3 +163,4 @@ T:\Usuarios\INFORMATICA\3A ETIM\GWT\camelliaft.nanahira\TCCGWT\TCCGWT\obj\Debug\
 T:\Usuarios\INFORMATICA\3A ETIM\GWT\camelliaft.nanahira\TCCGWT\TCCGWT\obj\Debug\TCCGWT.csproj.CopyComplete
 T:\Usuarios\INFORMATICA\3A ETIM\GWT\camelliaft.nanahira\TCCGWT\TCCGWT\obj\Debug\TCCGWT.dll
 T:\Usuarios\INFORMATICA\3A ETIM\GWT\camelliaft.nanahira\TCCGWT\TCCGWT\obj\Debug\TCCGWT.pdb
+T:\Usuarios\INFORMATICA\3A ETIM\GWT\camelliaft.nanahira\TCCGWT\TCCGWT\obj\Debug\TCCGWT.csprojAssemblyReference.cache
