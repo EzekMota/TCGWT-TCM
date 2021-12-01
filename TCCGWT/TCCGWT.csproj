@@ -143,6 +143,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\CSS.css" />
     <Content Include="Content\Estilo.css" />
     <Content Include="Content\Style.css" />
     <Content Include="favicon.ico" />
@@ -150,6 +151,7 @@
     <Content Include="Images\caralho.png" />
     <Content Include="Images\imagem.jfif" />
     <Content Include="Images\logoa.png" />
+    <Content Include="Images\NOW.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
