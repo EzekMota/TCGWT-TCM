@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using TCCGWT.Models.formsModels;
+using TCCGWT.Models;
 using Newtonsoft.Json;
 using System.Net.Http;
 using System.Web.UI.WebControls;
@@ -36,8 +37,8 @@ namespace TCCGWT.Controllers
                 {
                     var ApiResponse = await result.Content.ReadAsStringAsync();
                     
-                    var res = JsonConvert.DeserializeObject<LoginResult>(ApiResponse);
-                    if (res.idCli == 0)
+                    var res = JsonConvert.DeserializeObject<ClienteModel>(ApiResponse);
+                    if (res.IdCli == 0)
                     {
                         ModelState.AddModelError(string.Empty, "Usuário ou senha inválidos");
                         return View();

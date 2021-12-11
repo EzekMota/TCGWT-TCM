@@ -131,7 +131,6 @@
     </Compile>
     <Compile Include="Models\ClienteModel.cs" />
     <Compile Include="Models\formsModels\loginModel.cs" />
-    <Compile Include="Models\formsModels\LoginResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
