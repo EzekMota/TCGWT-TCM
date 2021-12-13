@@ -1,12 +1,9 @@
 ﻿.body {
     font-family: Consolas;
-    margin-left: 5%;
 }
 
-.compartimento {
+.body-content {
     margin-top: 80px;
-    margin-left: -100px;
-    margin-right: -15px;
 }
 
 .navbar {
@@ -25,9 +22,6 @@
     padding-top: 25px;
 }
 
-nav-bg {
-    background-color: #2d353d;
-}
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
 :root {
@@ -36,7 +30,7 @@ nav-bg {
     --first-color: #4723D9;
     --first-color-light: #AFA5D9;
     --white-color: #F7F6FB;
-    --body-font: 'Nunito', sans-serif;
+    --body-font: 'Consolas', Consolas;
     --normal-font-size: 1rem;
     --z-fixed: 100
 }
@@ -50,7 +44,6 @@ nav-bg {
 body {
     position: relative;
     margin: var(--header-height) 0 0 0;
-    padding: 0 1rem;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     transition: .5s
@@ -207,6 +200,6 @@ a {
     }
 
     .body-pd {
-        padding-left: calc(var(--nav-width) + 1088px)
+        padding-left: calc(var(--nav-width) + 188px)
     }
 }

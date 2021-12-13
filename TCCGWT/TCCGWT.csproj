@@ -160,6 +160,9 @@
     <Content Include="Images\caralho.png" />
     <Content Include="Images\imagem.jfif" />
     <Content Include="Images\logoa.png" />
+    <Content Include="Images\mainslide1.jpg" />
+    <Content Include="Images\mainslide2.jpg" />
+    <Content Include="Images\mainslide3.jpg" />
     <Content Include="Images\NOW.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
