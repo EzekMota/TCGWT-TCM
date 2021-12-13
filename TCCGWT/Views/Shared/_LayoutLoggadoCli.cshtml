@@ -20,7 +20,7 @@
             </button>
             <img src="~/Images/logoa.png" width="70px" height="70px" class="navbar-brand" href="#"></img>
             <div id="nav-left">
-                <a class="navbar-text"> @Request.Cookies["userId"].Value</a>
+                <a class="navbar-text"> @Request.Cookies["userId"].Value </a>               
             </div>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
@@ -70,5 +70,3 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
-<h2>_LayoutLoggado</h2>
-

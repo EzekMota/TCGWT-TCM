@@ -1,0 +1,70 @@
+﻿@model IEnumerable<TCCGWT.Models.carrinhoModel>
+
+@{
+    ViewBag.Title = "Carrinho";
+    Layout = "~/Views/Shared/_LayoutLoggadoCli.cshtml";
+}
+
+<h2>Carrinho</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdCarrinho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CepCarrinho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LogradouroCarrinho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumCarrinho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ComplementoCarrinho)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdPedido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdCli)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdCarrinho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CepCarrinho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LogradouroCarrinho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumCarrinho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComplementoCarrinho)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdPedido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdCli)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
