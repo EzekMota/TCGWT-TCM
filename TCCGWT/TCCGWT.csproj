@@ -157,6 +157,7 @@
     <Content Include="Content\Style.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\branco.png" />
     <Content Include="Images\caralho.png" />
     <Content Include="Images\imagem.jfif" />
     <Content Include="Images\logoa.png" />

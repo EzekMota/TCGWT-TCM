@@ -28,6 +28,79 @@
 nav-bg {
     background-color: #2d353d;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+
+.carousel-hover:hover .img-hover {
+    webkit-filter: blur(4px);
+    filter: blur(4px);
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+    transition: opacity 3s ease-in-out;
+}
+.carousel-hover:hover .overlay {
+    opacity: 0.8;
+}
+
+.text {
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.nav-custom {
+    background-color: #121211;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+text-black{
+    color: black;
+}
+
+.underline-hover {
+    display: inline-block;
+    position: relative;
+    color: antiquewhite;
+}
+.underline-hover:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: floralwhite;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline-hover:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+nav-esquerda{
+    padding: 50px;
+}
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
 :root {
