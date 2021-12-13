@@ -222,10 +222,10 @@
     <Content Include="Views\Cliente\Clientes.cshtml" />
     <Content Include="Views\Shared\_LayoutLoggadoCli.cshtml" />
     <Content Include="Views\Home\IndexLogadoCli.cshtml" />
+    <Content Include="Views\Carrinho\Carrinho.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Carrinho\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
