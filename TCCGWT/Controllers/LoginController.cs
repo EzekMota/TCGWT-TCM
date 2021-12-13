@@ -9,7 +9,7 @@ using TCCGWT.Models;
 using Newtonsoft.Json;
 using System.Net.Http;
 using System.Web.UI.WebControls;
-
+using System.Web.Security;
 
 namespace TCCGWT.Controllers
 {
@@ -43,6 +43,8 @@ namespace TCCGWT.Controllers
                         ModelState.AddModelError(string.Empty, "Usuário ou senha inválidos");
                         return View();
                     }
+                    Response.Cookies["userId"].Value = res.NomeCli.ToString();
+
                     return RedirectToAction("IndexLogadoCli", "Home");
                 }
             }

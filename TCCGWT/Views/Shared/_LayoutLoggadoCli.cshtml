@@ -20,7 +20,7 @@
             </button>
             <img src="~/Images/logoa.png" width="70px" height="70px" class="navbar-brand" href="#"></img>
             <div id="nav-left">
-                <a class="navbar-text"> </a>
+                <a class="navbar-text"> @Request.Cookies["userId"].Value</a>
             </div>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
@@ -30,7 +30,7 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            
+                            @Request.Cookies["userId"].Value
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Link</a>
