@@ -1,0 +1,29 @@
+﻿@model IEnumerable<TCCGWT.Models.Produto>
+
+@{
+    ViewBag.Title = "Produto";
+    Layout = "~/Views/Shared/_LayoutLoggadoCli.cshtml";
+}
+
+<h2>Produto</h2> 
+    <div class="container-fluid">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+
+                <img src="~/Images/@(item.IdProd).jpg" class="img-responsive" style="width:310px; height:310px;"/>
+                
+                <div><h4>@Html.DisplayFor(modelItem => item.IdProd)</h4></div>
+               
+                
+                <div>@Html.DisplayFor(modelItem => item.NomeProd)</div>
+                
+                
+                <div>@Html.DisplayFor(modelItem => item.DescProd)</div>
+                
+                
+                
+                <div>@Html.DisplayFor(modelItem => item.PrecoProd)</div>
+             }
+        </div>
+    </div>
