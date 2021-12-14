@@ -16,11 +16,11 @@
             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
             <div class="form-floating">
-                @Html.EditorFor(model => model.userCli, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.userCli, new { htmlAttributes = new { @class = "form-control",}  })
                 @Html.ValidationMessageFor(model => model.userCli)
             </div>
             <div class="form-floating">
-                @Html.EditorFor(model => model.senhaCli, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.senhaCli, new { htmlAttributes = new { @class = "form-control",  type = "password" } } )
                 @Html.ValidationMessageFor(model => model.senhaCli)
             </div>
 
