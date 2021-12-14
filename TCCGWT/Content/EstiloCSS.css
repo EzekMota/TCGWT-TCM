@@ -1,24 +1,14 @@
 ﻿.body {
     font-family: Consolas;
-    margin-left: 5%;
 }
-.letrinhas{
-    font-family:Consolas;
-    font-size: 17px;
-}
-.compartimento {
+
+.body-content {
     margin-top: 80px;
-    margin-left: -100px;
-    margin-right: -15px;
-}
-.espaco{
-    padding-bottom: 10px;
 }
 
 .navbar {
     font-size: 18px;
     padding-left: 10px;
-    color: floralwhite;
 }
 
 .centro {
@@ -28,123 +18,10 @@
     padding: 10px;
 }
 
-
-.form {
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
 .row p {
     padding-top: 25px;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: black;
-}
-
-.carousel-hover:hover .img-hover {
-    webkit-filter: blur(4px);
-    filter: blur(4px);
-    -webkit-transition: opacity 3s ease-in-out;
-    -moz-transition: opacity 3s ease-in-out;
-    -o-transition: opacity 3s ease-in-out;
-    transition: opacity 3s ease-in-out;
-}
-.carousel-hover:hover .overlay {
-    opacity: 0.8;
-}
-
-.text {
-    color: floralwhite;
-    font-size: 60px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.nav-custom {
-    background-color: #121211;
-}
-
-.underline-hover {
-    display: inline-block;
-    position: relative;
-    color: antiquewhite;
-}
-.underline-hover:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: floralwhite;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-.underline-hover:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.nav-esquerda{
-    padding: 50px;
-}
-
-.menu-hover {
-    background-color: #121211;
-    color:floralwhite;
-}
-    .menu-hover:hover {
-        background-color: #080807;
-        color:antiquewhite;
-        -webkit-transition: background-color 0.2s linear;
-        -ms-transition: background-color 0.2 linear;
-        transition: background-color 0.2s linear;
-    }
-
-.menu-container{
-    margin-left: 15px;
-}
-
-.zoom{
-    transition: 0.4s;
-}
-    .zoom:hover {
-        transform: scale(1.3);
-    }
-
-.form-control{
-    width: 550px;
-    font-size: 15px;
-}
-
-.btn-custom {
-    background-color: #121211;
-    color: floralwhite;
-}
-btn-custom:hover {
-    color: antiquewhite;
-    -webkit-transition: color 0.2s linear;
-    -ms-transition: color 0.2 linear;
-    transition: color 0.2s linear;
-}
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
 :root {
@@ -153,6 +30,7 @@ btn-custom:hover {
     --first-color: #4723D9;
     --first-color-light: #AFA5D9;
     --white-color: #F7F6FB;
+    --body-font: 'Consolas', Consolas;
     --normal-font-size: 1rem;
     --z-fixed: 100
 }
@@ -166,7 +44,6 @@ btn-custom:hover {
 body {
     position: relative;
     margin: var(--header-height) 0 0 0;
-    padding: 0 1rem;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     transition: .5s
@@ -323,6 +200,6 @@ a {
     }
 
     .body-pd {
-        padding-left: calc(var(--nav-width) + 1088px)
+        padding-left: calc(var(--nav-width) + 188px)
     }
 }

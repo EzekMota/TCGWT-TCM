@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Tomoe Sushi</title>
@@ -21,46 +21,46 @@
                 </button>
                 <a href='@Url.Action("Index","Home","Home")' style="padding-left: 30px;"><img src="~/Images/brand_branca.png" width="180px" height="70px" class="navbar-brand" /></a>
             </div>
-            <div id="nav-left nav-esquerda">
-                <a class="navbar-text underline-hover" href='@Url.Action("Login", "Login", "Login")' style="text-decoration:none; color: floralwhite;">Login </a> |
-                <a class="navbar-text underline-hover" href='@Url.Action("Cadastro", "Cadastro", "Cadastro")' style="text-decoration:none; color: floralwhite;"> Cadastro</a>
+            <div id="nav-left">
+                <a class="navbar-text"> @Request.Cookies["FuncName"].Value </a>
             </div>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color:#121211; color:floralwhite;">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                    <button type="button" class="btn-close btn-light text-reset text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" width="100%">
-                        <li class="nav-item menu-hover">
-                            <a class="nav-link menu-container" href="#">Cardápio</a>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            @Request.Cookies["FuncName"].Value
+                        </li>
+                        <li class="nav-item menu-hover" style="margin-top: 10px">
+                            <a class="nav-link active menu-container" aria-current="page" href='@Url.Action("Home","Index","Home")' style="color:black">Comandas</a>
                         </li>
                         <li class="nav-item menu-hover">
-                            <a class="nav-link menu-container" href="#sobre">Sobre nós</a>
+                            <a class="nav-link menu-container" href="#" style="color:black">Clientes</a>
                         </li>
                         <li class="nav-item menu-hover">
-                            <a class="nav-link menu-container" href="#contato">Contato</a>
+                            <a class="nav-link menu-container" href='@Url.Action("Clientes","Cliente","Cliente")' style="color:black">Funcionários</a>
                         </li>
                         <li class="nav-item menu-hover">
-                            <a class="nav-link menu-container" href='@Url.Action("Login","Login","Login")'>Delivery</a>
-                        </li>
-                        <li class="nav-item menu-hover">
-                            <a class="nav-link menu-container" href='@Url.Action("Login","Login","Login")'>Reservas</a>
+                            <a class="nav-link menu-container" href="@Url.Action("Reservas","Reserva","Reserva")" style="color:black">Reservas</a>
                         </li>
                     </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="body-content compartimento">
+    <div class="container body-content">
         @RenderBody()
-
-        <div class="container">
-            <hr />
-            <footer>
-                <p>&copy; @DateTime.Now.Year - Meu Aplicativo ASP.NET</p>
-            </footer>
-        </div>
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Meu Aplicativo ASP.NET</p>
+        </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")

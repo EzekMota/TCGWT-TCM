@@ -12,61 +12,73 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body>
-    <nav class="navbar navbar-dark bg-dark fixed-top">
+<body class="letrinhas" style="background-color:#f7f7f7d;">
+    <nav class="navbar navbar-dark nav-custom fixed-top" style="color:floralwhite;">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <img src="~/Images/logoa.png" width="70px" height="70px" class="navbar-brand" href="#"></img>
-            <div id="nav-left">
-                <a class="navbar-text"> @Request.Cookies["userId"].Value </a>               
+            <div class="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href='@Url.Action("Index","Home","Home")' style="padding-left: 30px;"><img src="~/Images/brand_branca.png" width="180px" height="70px" class="navbar-brand" /></a>
+                </div>
+            <div id="nav-left nav-esquerda">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3 zoom" viewBox="0 0 16 16" style="color:floralwhite;">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                </a> |
+                <a class="navbar-text underline-hover" style="text-decoration:none; color: floralwhite;"> @Request.Cookies["userName"].Value</a>
             </div>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color:#121211;">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-light text-reset text-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            @Request.Cookies["userId"].Value
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                <div class="">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" width="100%">
+                        <li class="nav-item menu-container">
+                            <a class="navbar-text underline-hover" href='@Url.Action("Index","Home", "Home")' style="text-decoration:none; color: floralwhite;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-door-open" viewBox="0 0 16 16">
+                                <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z" />
+                                <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5zM4 1.934V15h6V1.077l-6 .857z" />
+                            </svg>
+                            Sair
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        </li>
+                        <li class="nav-item menu-hover" style="margin-top:25px">
+                            <a class="nav-link menu-container" href="#top">Cardápio</a>
+                        </li>
+                        <li class="nav-item menu-hover">
+                            <a class="nav-link menu-container" href="#sobre">Sobre nós</a>
+                        </li>
+                        <li class="nav-item menu-hover">
+                            <a class="nav-link menu-container" href="#contato">Contato</a>
+                        </li>
+                        <li class="nav-item menu-hover">
+                            <a class="nav-link menu-container" href='#'>Delivery</a>
+                        </li>
+                        <li class="nav-item menu-hover">
+                            <a class="nav-link menu-container" href="@Url.Action("Reservas","Reserva","Reserva")">Reservas</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="container body-content">
+    <div class="body-content compartimento">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Meu Aplicativo ASP.NET</p>
-        </footer>
+        <div class="container">
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - Meu Aplicativo ASP.NET</p>
+            </footer>
+        </div>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/inputmask")
     @RenderSection("scripts", required: false)
 </body>
 </html>
+

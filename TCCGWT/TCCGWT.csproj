@@ -123,16 +123,20 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CadastroController.cs" />
     <Compile Include="Controllers\CarrinhoController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\ReservaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\carrinhoModel.cs" />
+    <Compile Include="Models\ClienteCadastroModel.cs" />
     <Compile Include="Models\ClienteModel.cs" />
     <Compile Include="Models\formsModels\loginModel.cs" />
+    <Compile Include="Models\ReservaModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -157,9 +161,15 @@
     <Content Include="Content\Style.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\branco.png" />
+    <Content Include="Images\brand_branca.png" />
     <Content Include="Images\caralho.png" />
     <Content Include="Images\imagem.jfif" />
     <Content Include="Images\logoa.png" />
+    <Content Include="Images\logo_preta.png" />
+    <Content Include="Images\mainslide1.jpg" />
+    <Content Include="Images\mainslide2.jpg" />
+    <Content Include="Images\mainslide3.jpg" />
     <Content Include="Images\NOW.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -190,6 +200,11 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\inputmask\bindings\inputmask.binding.js" />
+    <Content Include="Scripts\inputmask\inputmask.js" />
+    <Content Include="Scripts\inputmask\inputmask.min.js" />
+    <Content Include="Scripts\inputmask\jquery.inputmask.js" />
+    <Content Include="Scripts\inputmask\jquery.inputmask.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -219,6 +234,9 @@
     <Content Include="Views\Shared\_LayoutLoggadoCli.cshtml" />
     <Content Include="Views\Home\IndexLogadoCli.cshtml" />
     <Content Include="Views\Carrinho\Carrinho.cshtml" />
+    <Content Include="Views\Shared\_LayoutLogadoFunc.cshtml" />
+    <Content Include="Views\Reserva\Reservas.cshtml" />
+    <Content Include="Views\Cadastro\Cadastro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
