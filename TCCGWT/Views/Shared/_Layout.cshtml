@@ -15,10 +15,12 @@
 <body class="letrinhas" style="background-color:#f7f7f7d;">
     <nav class="navbar navbar-dark nav-custom fixed-top" style="color:floralwhite;">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a href='@Url.Action("Index","Home","Home")'><img src="~/Images/branco.png" width="70px" height="70px" class="navbar-brand" /></a>
+            <div class="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href='@Url.Action("Index","Home","Home")' style="padding-left: 30px;"><img src="~/Images/brand_branca.png" width="180px" height="70px" class="navbar-brand" /></a>
+            </div>
             <div id="nav-left nav-esquerda">
                 <a class="navbar-text underline-hover" href='@Url.Action("Login", "Login", "Login")' style="text-decoration:none; color: floralwhite;">Login </a> |
                 <a class="navbar-text underline-hover" href='@Url.Action("Cadastro", "Cadastro", "Cadastro")' style="text-decoration:none; color: floralwhite;"> Cadastro</a>
@@ -26,10 +28,26 @@
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color:#121211; color:floralwhite;">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                    <button type="button" class="btn-close text-reset text-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-light text-reset text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="">
-
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" width="100%">
+                        <li class="nav-item menu-hover">
+                            <a class="nav-link menu-container" href="#">Cardápio</a>
+                        </li>
+                        <li class="nav-item menu-hover">
+                            <a class="nav-link menu-container" href="#sobre">Sobre nós</a>
+                        </li>
+                        <li class="nav-item menu-hover">
+                            <a class="nav-link menu-container" href="#contato">Contato</a>
+                        </li>
+                        <li class="nav-item menu-hover">
+                            <a class="nav-link menu-container" href='@Url.Action("Login","Login","Login")'>Delivery</a>
+                        </li>
+                        <li class="nav-item menu-hover">
+                            <a class="nav-link menu-container" href='@Url.Action("Login","Login","Login")'>Reservas</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

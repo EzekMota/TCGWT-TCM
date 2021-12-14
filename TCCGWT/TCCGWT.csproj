@@ -162,9 +162,11 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Images\branco.png" />
+    <Content Include="Images\brand_branca.png" />
     <Content Include="Images\caralho.png" />
     <Content Include="Images\imagem.jfif" />
     <Content Include="Images\logoa.png" />
+    <Content Include="Images\logo_preta.png" />
     <Content Include="Images\mainslide1.jpg" />
     <Content Include="Images\mainslide2.jpg" />
     <Content Include="Images\mainslide3.jpg" />

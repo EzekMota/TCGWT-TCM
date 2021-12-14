@@ -12,13 +12,15 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body class="letrinhas">
-    <nav class="navbar navbar-dark bg-dark fixed-top">
+<body class="letrinhas" style="background-color:#f7f7f7d;">
+    <nav class="navbar navbar-dark nav-custom fixed-top" style="color:floralwhite;">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <img src="~/Images/logoa.png" width="70px" height="70px" class="navbar-brand" href="#"></img>
+            <div class="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href='@Url.Action("Index","Home","Home")' style="padding-left: 30px;"><img src="~/Images/brand_branca.png" width="180px" height="70px" class="navbar-brand" /></a>
+            </div>
             <div id="nav-left">
                 <a class="navbar-text"> @Request.Cookies["FuncName"].Value </a>
             </div>
