@@ -1,3 +1,23 @@
 
 *.config
 .vs/config/applicationhost.config
+<<<<<<< Updated upstream
+=======
+.vs/config/applicationhost.config
+.vs/TCCGWT/v15/Server/sqlite3/storage.ide-shm
+.vs/TCCGWT/v15/Server/sqlite3/storage.ide-wal
+TCCGWT/obj/Debug/TCCGWT.csproj.CoreCompileInputs.cache
+TCCGWT/obj/Debug/TCCGWT.csprojAssemblyReference.cache
+.vs/TCCGWT/v15/.suo
+.vs/TCCGWT/v15/.suo
+.vs/TCCGWT/v15/Server/sqlite3/storage.ide-shm
+*.ide-wal
+*.cache
+.vs/TCCGWT/v15/Server/sqlite3/storage.ide-wal
+.vs/TCCGWT/v15/Server/sqlite3/storage.ide-shm
+.vs/TCCGWT/v15/.suo
+TCCGWT/bin/TCCGWT.dll
+TCCGWT/bin/TCCGWT.pdb
+.vs/TCCGWT/v15/Server/sqlite3/storage.ide
+.vs/TCCGWT/v15/Server/sqlite3/storage.ide-wal
+>>>>>>> Stashed changes
