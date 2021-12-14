@@ -43,7 +43,8 @@ namespace TCCGWT.Controllers
                         ModelState.AddModelError(string.Empty, "Usuário ou senha inválidos");
                         return View();
                     }
-                    Response.Cookies["userId"].Value = res.NomeCli.ToString();
+                    Response.Cookies["userName"].Value = res.NomeCli.ToString();
+                    Response.Cookies["userId"].Value = res.IdCli.ToString();
 
                     return RedirectToAction("IndexLogadoCli", "Home");
                 }

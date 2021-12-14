@@ -1,0 +1,64 @@
+﻿@model IEnumerable<TCCGWT.Models.ReservaModel>
+
+@{
+    ViewBag.Title = "Reservas";
+    Layout = "~/Views/Shared/_LayoutLoggadoCli.cshtml";
+}
+
+<h2>Reservas</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdReserva)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumPessoas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataHoraReserva)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatusReserva)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdCli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdMesa)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdReserva)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumPessoas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataHoraReserva)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StatusReserva)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdCli)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdMesa)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
