@@ -127,12 +127,14 @@
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\ReservaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\carrinhoModel.cs" />
     <Compile Include="Models\ClienteModel.cs" />
     <Compile Include="Models\formsModels\loginModel.cs" />
+    <Compile Include="Models\ReservaModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -224,6 +226,7 @@
     <Content Include="Views\Home\IndexLogadoCli.cshtml" />
     <Content Include="Views\Carrinho\Carrinho.cshtml" />
     <Content Include="Views\Shared\_LayoutLogadoFunc.cshtml" />
+    <Content Include="Views\Reserva\Reservas.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

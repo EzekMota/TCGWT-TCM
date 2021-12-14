@@ -25,7 +25,7 @@
                         <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
                     </svg>
                 </a> |
-                <a class="navbar-text underline-hover" style="text-decoration:none; color: floralwhite;"> @Request.Cookies["userId"].Value</a>
+                <a class="navbar-text underline-hover" style="text-decoration:none; color: floralwhite;"> @Request.Cookies["userName"].Value</a>
             </div>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
@@ -35,19 +35,10 @@
                 <div class="">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" width="100%">
                         <li class="nav-item menu-container" style="color:gray;">
-                            @Request.Cookies["userId"].Value
-                        </li>
-                        <li class="nav-item menu-hover" style="margin-top: 10px">
-                            <a class="nav-link active menu-container" aria-current="page" href='@Url.Action("Home","Index","Home")' style="color:black">Comandas</a>
+                            @Request.Cookies["userName"].Value
                         </li>
                         <li class="nav-item menu-hover">
-                            <a class="nav-link menu-container" href="#" style="color:black">Clientes</a>
-                        </li>
-                        <li class="nav-item menu-hover">
-                            <a class="nav-link menu-container" href='@Url.Action("Clientes","Cliente","Cliente")' style="color:black">Funcionários</a>
-                        </li>
-                        <li class="nav-item menu-hover">
-                            <a class="nav-link menu-container" href="@Url.Action("Clientes","Cliente","")" style="color:black">Reservas</a>
+                            <a class="nav-link menu-container" href="@Url.Action("Reservas","Reserva","Reserva")" style="color:black">Reservas</a>
                         </li>
                     </ul>
                 </div>
