@@ -3,94 +3,84 @@
     ViewBag.Title = "Cadastro";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<h2>Cadastro</h2>
-@using (Html.BeginForm())
-{
-    @Html.AntiForgeryToken()
+<main class="form-signin mt-5 text-center container align-items-center">       
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
 
-    <div class="form-horizontal">
-        <h4>ClienteCadastroModel</h4>
+    <div class="form">
+        <img src="~/Images/logo_preta.png" width="150px" height="150px" />
         <hr />
+        <h1 class="h3 mb-3 fw-normal">Cadastro</h1>
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            @Html.LabelFor(model => model.NomeCli, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-form-label">
             <div class="col-md-10">
-                @Html.EditorFor(model => model.NomeCli, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.NomeCli, new { htmlAttributes = new { @class = "form-control", @placeholder = "Nome" } })
                 @Html.ValidationMessageFor(model => model.NomeCli, "", new { @class = "text-danger" })
             </div>
         </div>
-        <div class="form-group">
-            @Html.LabelFor(model => model.EmailCli, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-form-label">
             <div class="col-md-10">
-                @Html.EditorFor(model => model.EmailCli, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.EmailCli, new { htmlAttributes = new { @class = "form-control", @placeholder = "Email" } })
                 @Html.ValidationMessageFor(model => model.EmailCli, "", new { @class = "text-danger" })
             </div>
         </div>
-        <div class="form-group">
-            @Html.LabelFor(model => model.UserCli, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-form-label">
             <div class="col-md-10">
-                @Html.EditorFor(model => model.UserCli, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.UserCli, new { htmlAttributes = new { @class = "form-control", @placeholder = "Usuário" } })
                 @Html.ValidationMessageFor(model => model.UserCli, "", new { @class = "text-danger" })
             </div>
         </div>
-        <div class="form-group">
-            @Html.LabelFor(model => model.SenhaCli, htmlAttributes: new { @class = "control-label col-md-2", type = "password" })
+        <div class="col-form-label">
             <div class="col-md-10">
-                @Html.EditorFor(model => model.SenhaCli, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.SenhaCli, new { htmlAttributes = new { @class = "form-control", type = "password", @placeholder = "Senha" } })
                 @Html.ValidationMessageFor(model => model.SenhaCli, "", new { @class = "text-danger" })
             </div>
         </div>
-        <div class="form-group">
-            @Html.LabelFor(model => model.TelefoneCli, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.TelefoneCli, new { htmlAttributes = new { @class = "form-control", id = "telefone" } })
-                @Html.ValidationMessageFor(model => model.TelefoneCli, "", new { @class = "text-danger" })
+        <div class="row">
+            <div class="col-6">
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.TelefoneCli, new { htmlAttributes = new { @class = "mini-form-control", id = "telefone", @placeholder = "Telefone" } })
+                    @Html.ValidationMessageFor(model => model.TelefoneCli, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.CepCli, new { htmlAttributes = new { @class = "mini-form-control", @placeholder="CEP" } })
+                    @Html.ValidationMessageFor(model => model.CepCli, "", new { @class = "text-danger" })
+                </div>
             </div>
         </div>
-        <div class="form-group">
-            @Html.LabelFor(model => model.CepCli, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-form-label">
             <div class="col-md-10">
-                @Html.EditorFor(model => model.CepCli, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.CepCli, "", new { @class = "text-danger" })
-            </div>
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(model => model.LogradouroCli, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.LogradouroCli, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.LogradouroCli, new { htmlAttributes = new { @class = "form-control", @placeholder = "Logradouro" } })
                 @Html.ValidationMessageFor(model => model.LogradouroCli, "", new { @class = "text-danger" })
             </div>
         </div>
-        <div class="form-group">
-            @Html.LabelFor(model => model.NumCli, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.NumCli, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.NumCli, "", new { @class = "text-danger" })
+        <div class="row">
+            <div class="col-6">
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.NumCli, new { htmlAttributes = new { @class = "mini-form-control", @placeholder ="Número" } })
+                    @Html.ValidationMessageFor(model => model.NumCli, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.ComplementoCli, new { htmlAttributes = new { @class = "mini-form-control", @placeholder ="Complemento"} })
+                    @Html.ValidationMessageFor(model => model.ComplementoCli, "", new { @class = "text-danger" })
+                </div>
             </div>
         </div>
-        <div class="form-group">
-            @Html.LabelFor(model => model.ComplementoCli, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.ComplementoCli, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.ComplementoCli, "", new { @class = "text-danger" })
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-        </div>
-    </div>
-}
-@section Scripts {
-    <script>
-        $(document).ready(function ()
-        {
-            $("#TelefoneCli").inputmask("mask", { "mask": "(99) 9999-99999" });
-            $("#CepCli").inputmask("mask", { "mask": "99999-999" });
-        });
-    </script>
-}
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
+        <button class="w-50 btn btn-lg btn-custom" type="submit" value="Create" style="margin-top: 15px">Criar Conta</button>
+        
+     </div>
+    }
+    @section Scripts {
+        <script>
+            $(document).ready(function () {
+                $("#TelefoneCli").inputmask("mask", { "mask": "(99) 9999-99999" });
+                $("#CepCli").inputmask("mask", { "mask": "99999-999" });
+            });
+        </script>
+    }
+</main>
