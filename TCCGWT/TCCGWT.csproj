@@ -129,6 +129,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\LoginFuncController.cs" />
+    <Compile Include="Controllers\ProdutoController.cs" />
     <Compile Include="Controllers\ReservaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -139,6 +140,7 @@
     <Compile Include="Models\formsModels\LoginFuncModel.cs" />
     <Compile Include="Models\formsModels\loginModel.cs" />
     <Compile Include="Models\FuncModel.cs" />
+    <Compile Include="Models\Produto.cs" />
     <Compile Include="Models\ReservaModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -166,7 +168,6 @@
     <Content Include="Global.asax" />
     <Content Include="Images\branco.png" />
     <Content Include="Images\brand_branca.png" />
-    <Content Include="Images\caralho.png" />
     <Content Include="Images\imagem.jfif" />
     <Content Include="Images\logoa.png" />
     <Content Include="Images\logo_preta.png" />
@@ -242,6 +243,7 @@
     <Content Include="Views\Cadastro\Cadastro.cshtml" />
     <Content Include="Views\Home\IndexLogadoFunc.cshtml" />
     <Content Include="Views\LoginFunc\LoginFunc.cshtml" />
+    <Content Include="Views\Produto\Produto.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
