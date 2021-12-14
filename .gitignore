@@ -1,9 +1,8 @@
 
 *.config
 .vs/config/applicationhost.config
-.vs/TCCGWT/v15/.suo
+.vs/config/applicationhost.config
 .vs/TCCGWT/v15/Server/sqlite3/storage.ide-shm
 .vs/TCCGWT/v15/Server/sqlite3/storage.ide-wal
-.vs/TCCGWT/v15/Server/sqlite3/storage.ide-shm
-.vs/TCCGWT/v15/Server/sqlite3/storage.ide-wal
-.vs/TCCGWT/v15/.suo
+TCCGWT/obj/Debug/TCCGWT.csproj.CoreCompileInputs.cache
+TCCGWT/obj/Debug/TCCGWT.csprojAssemblyReference.cache
