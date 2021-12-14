@@ -2,7 +2,10 @@
     font-family: Consolas;
     margin-left: 5%;
 }
-
+.letrinhas{
+    font-family:Consolas;
+    font-size: 17px;
+}
 .compartimento {
     margin-top: 80px;
     margin-left: -100px;
@@ -104,11 +107,13 @@
     padding: 50px;
 }
 
-.menu-hover{
-    background-color:white;
+.menu-hover {
+    background-color: #121211;
+    color:floralwhite;
 }
     .menu-hover:hover {
-        background-color: lightgray;
+        background-color: #080807;
+        color:antiquewhite;
         -webkit-transition: background-color 0.2s linear;
         -ms-transition: background-color 0.2 linear;
         transition: background-color 0.2s linear;
@@ -148,7 +153,6 @@ btn-custom:hover {
     --first-color: #4723D9;
     --first-color-light: #AFA5D9;
     --white-color: #F7F6FB;
-    --body-font: 'Nunito', sans-serif;
     --normal-font-size: 1rem;
     --z-fixed: 100
 }
