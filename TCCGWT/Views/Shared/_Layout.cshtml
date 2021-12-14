@@ -12,21 +12,21 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body>
-    <nav class="navbar navbar-dark nav-custom fixed-top">
+<body class="letrinhas" style="background-color:#f7f7f7d;">
+    <nav class="navbar navbar-dark nav-custom fixed-top" style="color:floralwhite;">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href='@Url.Action("Index","Home","Home")'><img src="~/Images/branco.png" width="70px" height="70px" class="navbar-brand"/></a>
+            <a href='@Url.Action("Index","Home","Home")'><img src="~/Images/branco.png" width="70px" height="70px" class="navbar-brand" /></a>
             <div id="nav-left nav-esquerda">
-                <a class="navbar-text underline-hover" href='@Url.Action("Login", "Login", "Login")' style="text-decoration:none; color: floralwhite;">Login </a> | 
-                <a class="navbar-text underline-hover" href='@Url.Action("Login", "Login", "Login")' style="text-decoration:none; color: floralwhite;"> Cadastro</a> 
+                <a class="navbar-text underline-hover" href='@Url.Action("Login", "Login", "Login")' style="text-decoration:none; color: floralwhite;">Login </a> |
+                <a class="navbar-text underline-hover" href='@Url.Action("Login", "Login", "Login")' style="text-decoration:none; color: floralwhite;"> Cadastro</a>
             </div>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color:#121211; color:floralwhite;">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title text-black" id="offcanvasNavbarLabel" style="color:black;">Menu</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset text-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="">
 
@@ -47,6 +47,7 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/inputmask")
     @RenderSection("scripts", required: false)
 </body>
 </html>
