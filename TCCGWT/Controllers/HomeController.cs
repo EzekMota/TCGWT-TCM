@@ -35,5 +35,10 @@ namespace TCCGWT.Controllers
         {
             return View();
         }
+        
+        public ActionResult Comandas()
+        {
+            return View();
+        }
     }
 }
