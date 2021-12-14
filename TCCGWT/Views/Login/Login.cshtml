@@ -2,36 +2,31 @@
 @{
     ViewBag.Title = "Login";
 }
-<body class="text-center">
-
-    <br />
-    <br />
-
-    <main class="form-signin mt-5">
+    <main class="form-signin mt-5 text-center container align-items-center">
         
        @using (Html.BeginForm())
         {
             @Html.AntiForgeryToken()
+        <div class="form">
+            <h1 class="h3 mb-3 fw-normal">Entrar</h1>
 
-            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-
-            <div class="form-floating">
-                @Html.EditorFor(model => model.userCli, new { htmlAttributes = new { @class = "form-control",}  })
+            <div class="col-form-label ">
+                @Html.EditorFor(model => model.userCli, new { htmlAttributes = new { @class = "form-control", } })
                 @Html.ValidationMessageFor(model => model.userCli)
             </div>
-            <div class="form-floating">
-                @Html.EditorFor(model => model.senhaCli, new { htmlAttributes = new { @class = "form-control",  type = "password" } } )
+            <div class="col-form-label">
+                @Html.EditorFor(model => model.senhaCli, new { htmlAttributes = new { @class = "form-control", type = "password" } })
                 @Html.ValidationMessageFor(model => model.senhaCli)
             </div>
 
-            <button class="w-100 btn btn-lg btn-primary" type="submit" value="logar">Sign in</button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+            <button class="w-50 btn btn-lg btn-custom" type="submit" value="logar">Login</button>
+        </div>
         }
     </main>
+    <br /><br /><br /><br />
 
 
 
-</body>
 
 
 
