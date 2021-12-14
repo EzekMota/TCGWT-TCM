@@ -4,61 +4,53 @@
     ViewBag.Title = "Reservas";
     Layout = "~/Views/Shared/_LayoutLoggadoCli.cshtml";
 }
+<br/>
+<div class="container">
+<main class="form-signin mt-5 text-center container align-items-center">
+    <h2>Minhas Reservas</h2>
+    <table class="table table-hover ">
+        <tr class="mesa">
+            <th>
+                Id da Reserva
+            </th>
+            <th>
+                Quantidade de Pessoas
+            </th>
+            <th>
+                Data
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                Mesa
+            </th>
+            <th></th>
+        </tr>
 
-<h2>Reservas</h2>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdReserva)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumPessoas)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataHoraReserva)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StatusReserva)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdMesa)
+                </td>
+                <td></td>
+            </tr>
+        }
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.IdReserva)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.NumPessoas)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DataHoraReserva)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.StatusReserva)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.IdCli)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.IdMesa)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.IdReserva)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NumPessoas)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DataHoraReserva)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.StatusReserva)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.IdCli)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.IdMesa)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-        </td>
-    </tr>
-}
-
-</table>
+    </table>
+</main>
+<button class="w-25 btn btn-lg btn-custom" type="submit" value="#">Nova Reserva</button>
+</div> 
