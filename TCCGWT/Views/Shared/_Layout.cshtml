@@ -25,29 +25,22 @@
             </div>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title text-black" id="offcanvasNavbarLabel">Menu</h5>
+                    <h5 class="offcanvas-title text-black" id="offcanvasNavbarLabel" style="color:black;">Menu</h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href='@Url.Action("Home","Index","Home")' style="color:black">Home</a>
+                <div class="">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" width="100%">
+                        <li class="nav-item menu-hover">
+                            <a class="nav-link active menu-container" aria-current="page" href='@Url.Action("Home","Index","Home")' style="color:black">Comandas</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li class="nav-item menu-hover">
+                            <a class="nav-link menu-container" href="#" style="color:black">Clientes</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li class="nav-item menu-hover">
+                            <a class="nav-link menu-container" href='@Url.Action("Cliente","Clientes","Cliente")' style="color:black">Funcionários</a>
+                        </li>
+                        <li class="nav-item menu-hover">
+                            <a class="nav-link menu-container" href="#" style="color:black">Reservas</a>
                         </li>
                     </ul>
                 </div>
