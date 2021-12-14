@@ -223,6 +223,7 @@
     <Content Include="Views\Shared\_LayoutLoggadoCli.cshtml" />
     <Content Include="Views\Home\IndexLogadoCli.cshtml" />
     <Content Include="Views\Carrinho\Carrinho.cshtml" />
+    <Content Include="Views\Shared\_LayoutLogadoFunc.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
