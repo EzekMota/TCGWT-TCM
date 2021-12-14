@@ -166,6 +166,8 @@
     <Content Include="Content\Style.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
     <Content Include="Images\branco.png" />
     <Content Include="Images\brand_branca.png" />
     <Content Include="Images\imagem.jfif" />

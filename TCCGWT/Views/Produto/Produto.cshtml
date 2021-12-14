@@ -4,26 +4,32 @@
     ViewBag.Title = "Produto";
     Layout = "~/Views/Shared/_LayoutLoggadoCli.cshtml";
 }
-
-<h2>Produto</h2> 
-    <div class="container-fluid">
+<br />
+<main class="form-signin mt-5 text-center container align-items-center">
+    <h2 style="padding-bottom: 40px;">Cardápio</h2>
+    <div class="container-fluid" style="padding-bottom: 40px;">
         <div class="row">
             @foreach (var item in Model)
             {
 
-                <img src="~/Images/@(item.IdProd).jpg" class="img-responsive" style="width:310px; height:310px;"/>
-                
-                <div><h4>@Html.DisplayFor(modelItem => item.IdProd)</h4></div>
-               
-                
-                <div>@Html.DisplayFor(modelItem => item.NomeProd)</div>
-                
-                
-                <div>@Html.DisplayFor(modelItem => item.DescProd)</div>
-                
-                
-                
-                <div>@Html.DisplayFor(modelItem => item.PrecoProd)</div>
-             }
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="~/Images/@(item.IdProd).jpg" alt="Produto" style="width:375px;height:300px;">
+                            <div class="over-image"><h4>@Html.DisplayFor(modelItem => item.NomeProd)</h4></div>
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="~/Images/@(item.IdProd).jpg" alt="Produto" style="width:375px;height:300px;">
+                            <div class="over-back">
+                                <p>@Html.DisplayFor(modelItem => item.DescProd)</p>
+                                <p>R$@Html.DisplayFor(modelItem => item.PrecoProd)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
         </div>
     </div>
+</main>
+<br /><br /><br /><br />
+
