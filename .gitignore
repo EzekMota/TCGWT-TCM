@@ -1,3 +1,9 @@
 
 *.config
 .vs/config/applicationhost.config
+.vs/TCCGWT/v15/.suo
+.vs/TCCGWT/v15/Server/sqlite3/storage.ide-shm
+.vs/TCCGWT/v15/Server/sqlite3/storage.ide-wal
+.vs/TCCGWT/v15/Server/sqlite3/storage.ide-shm
+.vs/TCCGWT/v15/Server/sqlite3/storage.ide-wal
+.vs/TCCGWT/v15/.suo
