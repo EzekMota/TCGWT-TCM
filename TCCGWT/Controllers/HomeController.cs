@@ -35,8 +35,8 @@ namespace TCCGWT.Controllers
         {
             return View();
         }
-
-        public ActionResult IndexLogadoFunc()
+        
+        public ActionResult Comandas()
         {
             return View();
         }
