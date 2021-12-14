@@ -9,7 +9,10 @@
             @Html.AntiForgeryToken()
         <div class="form">
             <img src="~/Images/logo_preta.png" width="150px" height="150px"/>
+            <hr />
             <h1 class="h3 mb-3 fw-normal">Entrar</h1>
+            <a href = "@Url.Action("LoginFunc", "LoginFunc", "LoginFunc")"> Funcionário</a>
+            <a href = "@Url.Action("LoginMan", "LoginMan", "LoginMan")"> Gerente </a>
 
             <div class="col-form-label ">
                 @Html.EditorFor(model => model.userCli, new { htmlAttributes = new { @class = "form-control", } })
@@ -23,6 +26,7 @@
             <button class="w-50 btn btn-lg btn-custom" type="submit" value="logar">Login</button>
         </div>
         }
+        
     </main>
     <br /><br /><br /><br />
 
