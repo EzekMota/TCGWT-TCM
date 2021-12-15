@@ -141,6 +141,7 @@
     <Compile Include="Models\formsModels\loginModel.cs" />
     <Compile Include="Models\FuncModel.cs" />
     <Compile Include="Models\Produto.cs" />
+    <Compile Include="Models\ReservaCadastroModel.cs" />
     <Compile Include="Models\ReservaModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -246,6 +247,7 @@
     <Content Include="Views\Home\IndexLogadoFunc.cshtml" />
     <Content Include="Views\LoginFunc\LoginFunc.cshtml" />
     <Content Include="Views\Produto\Produto.cshtml" />
+    <Content Include="Views\Reserva\CadastroReserva.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
