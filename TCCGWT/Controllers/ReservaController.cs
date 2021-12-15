@@ -56,6 +56,7 @@ namespace TCCGWT.Controllers
             {
                 string id = Request.Cookies["userId"].Value.ToString();
                 reserva.IdCli = id;
+                reserva.StatusReserva = "Pendente";
                 client.BaseAddress = new Uri("http://20.114.208.185/api/reserva");
                 var result = await client.PostAsJsonAsync<ReservaCadastroModel>("reserva", reserva);
 
