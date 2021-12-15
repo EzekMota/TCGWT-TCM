@@ -11,7 +11,10 @@
     margin-left: -100px;
     margin-right: -15px;
 }
-
+.contencao{
+    margin: auto;
+    width: 90%;
+}
 .mesa {
     background-color: #121211;
     color: floralwhite;
