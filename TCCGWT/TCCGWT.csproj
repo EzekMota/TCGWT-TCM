@@ -248,6 +248,8 @@
     <Content Include="Views\LoginFunc\LoginFunc.cshtml" />
     <Content Include="Views\Produto\Produto.cshtml" />
     <Content Include="Views\Reserva\CadastroReserva.cshtml" />
+    <Content Include="Views\Shared\_LayoutLogadoMan.cshtml" />
+    <Content Include="Views\Home\IndexLogadoMan.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
