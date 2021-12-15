@@ -128,7 +128,7 @@ namespace TCCGWT.Controllers
                         ModelState.AddModelError(string.Empty, "Dados inválidos");
                         return View();
                     }
-                    return RedirectToAction("Login", "Login");
+                    return RedirectToAction("Funcionarios", "CadastroFunc");
                 }
             }
 
