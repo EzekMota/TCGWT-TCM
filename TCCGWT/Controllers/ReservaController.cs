@@ -42,5 +42,41 @@ namespace TCCGWT.Controllers
                 return View();
             }
         }
+
+
+        public ActionResult CadastroReserva()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> CadastroReserva(ReservaCadastroModel reserva)
+        {           
+            using (var client = new HttpClient())
+            {
+                string id = Request.Cookies["userId"].Value.ToString();
+                reserva.IdCli = id;
+                client.BaseAddress = new Uri("http://20.114.208.185/api/reserva");
+                var result = await client.PostAsJsonAsync<ReservaCadastroModel>("reserva", reserva);
+
+                if (result.IsSuccessStatusCode)
+                {
+                var ApiResponse = await result.Content.ReadAsStringAsync();
+
+                var res = JsonConvert.DeserializeObject<Int64>(ApiResponse);
+                if (res == 0)
+                {
+                    ModelState.AddModelError(string.Empty, "Dados inválidos");
+                    return View();
+                }
+                return RedirectToAction("Reservas", "Reserva");
+            }
+        }
+
+            ModelState.AddModelError(string.Empty, "Servidor off ");
+
+            return View();
+            
+        }
     }
 }
