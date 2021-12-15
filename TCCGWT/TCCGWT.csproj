@@ -169,6 +169,7 @@
     <Content Include="Global.asax" />
     <Content Include="Images\1.jpg" />
     <Content Include="Images\2.jpg" />
+    <Content Include="Images\4.jpg" />
     <Content Include="Images\branco.png" />
     <Content Include="Images\brand_branca.png" />
     <Content Include="Images\imagem.jfif" />
@@ -177,7 +178,12 @@
     <Content Include="Images\mainslide1.jpg" />
     <Content Include="Images\mainslide2.jpg" />
     <Content Include="Images\mainslide3.jpg" />
-    <Content Include="Images\NOW.jpg" />
+    <Content Include="Images\slide1.jpg" />
+    <Content Include="Images\slide2.jpg" />
+    <Content Include="Images\slide3.jpg" />
+    <Content Include="Images\slide4.jpg" />
+    <Content Include="Images\slide5.jpg" />
+    <Content Include="Images\slide6.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
