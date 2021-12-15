@@ -41,6 +41,7 @@ namespace TCCGWT.Controllers
             return View();
         }
 
+        [HttpPost]
         public async Task<ActionResult> CadastroProd(ProdutoCadastro produto)
         {
             using (var client = new HttpClient())
