@@ -143,6 +143,7 @@
     <Compile Include="Models\FuncCadastroModel.cs" />
     <Compile Include="Models\FuncModel.cs" />
     <Compile Include="Models\Produto.cs" />
+    <Compile Include="Models\ProdutoCadastro.cs" />
     <Compile Include="Models\ReservaCadastroModel.cs" />
     <Compile Include="Models\ReservaModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -259,6 +260,9 @@
     <Content Include="Views\Shared\_LayoutLogadoMan.cshtml" />
     <Content Include="Views\Home\IndexLogadoMan.cshtml" />
     <Content Include="Views\CadastroFunc\CadastroFunc.cshtml" />
+    <Content Include="Views\Produto\CadastroProd.cshtml" />
+    <Content Include="Views\CadastroFunc\Funcionarios.cshtml" />
+    <Content Include="Views\CadastroFunc\EditFunc.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

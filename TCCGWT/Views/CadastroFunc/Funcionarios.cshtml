@@ -1,0 +1,70 @@
+﻿@model IEnumerable<TCCGWT.Models.FuncModel>
+
+@{
+    ViewBag.Title = "Funcionarios";
+    Layout = "~/Views/Shared/_LayoutLogadoMan.cshtml";
+}
+
+<h2>Funcionarios</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdFunc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeFunc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailFunc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserFunc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SenhaFunc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelFunc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NivelAcesso)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdFunc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeFunc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmailFunc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserFunc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SenhaFunc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelFunc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NivelAcesso)
+        </td>
+        <td>
+            @Html.ActionLink("EditFunc", "EditFunc", new { id=item.IdFunc }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.IdFunc })
+        </td>
+    </tr>
+}
+
+</table>
