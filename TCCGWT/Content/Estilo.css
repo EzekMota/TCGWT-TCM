@@ -11,6 +11,11 @@
     margin-left: -100px;
     margin-right: -15px;
 }
+
+.mesa {
+    background-color: #121211;
+    color: floralwhite;
+}
 .espaco{
     padding-bottom: 10px;
 }
@@ -98,6 +103,13 @@
     background-color: #121211;
 }
 
+.card{
+    background-color:#121211;
+}
+.imagem{
+    width: 340px;
+    height:340px;
+}
 .underline-hover {
     display: inline-block;
     position: relative;
