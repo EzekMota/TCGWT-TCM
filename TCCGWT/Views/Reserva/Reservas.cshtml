@@ -4,53 +4,53 @@
     ViewBag.Title = "Reservas";
     Layout = "~/Views/Shared/_LayoutLoggadoCli.cshtml";
 }
-<br/>
+<br />
 <div class="container">
-<main class="form-signin mt-5 text-center container align-items-center">
-    <h2>Minhas Reservas</h2>
-    <table class="table table-hover ">
-        <tr class="mesa">
-            <th>
-                Id da Reserva
-            </th>
-            <th>
-                Quantidade de Pessoas
-            </th>
-            <th>
-                Data
-            </th>
-            <th>
-                Status
-            </th>
-            <th>
-                Mesa
-            </th>
-            <th></th>
-        </tr>
-
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IdReserva)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.NumPessoas)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DataHoraReserva)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.StatusReserva)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IdMesa)
-                </td>
-                <td></td>
+    <main class="form-signin mt-5 text-center container align-items-center">
+        <h2>Minhas Reservas</h2>
+        <table class="table table-hover ">
+            <tr class="mesa">
+                <th>
+                    Id da Reserva
+                </th>
+                <th>
+                    Quantidade de Pessoas
+                </th>
+                <th>
+                    Data
+                </th>
+                <th>
+                    Status
+                </th>
+                <th>
+                    Mesa
+                </th>
+                <th></th>
             </tr>
-        }
 
-    </table>
-</main>
-<button class="w-25 btn btn-lg btn-custom" type="submit" href="@Url.Action("CadastrarReserva", "Reserva", "Reserva")">Nova Reserva</button>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdReserva)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NumPessoas)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataHoraReserva)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StatusReserva)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdMesa)
+                    </td>
+                    <td></td>
+                </tr>
+            }
+
+        </table>
+    </main>
+    <button class="w-25 btn btn-lg btn-custom" type="submit" value="#">Nova Reserva</button>
 </div> 
