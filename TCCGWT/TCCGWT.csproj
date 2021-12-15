@@ -124,6 +124,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CadastroController.cs" />
+    <Compile Include="Controllers\CadastroFuncController.cs" />
     <Compile Include="Controllers\CarrinhoController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -139,6 +140,7 @@
     <Compile Include="Models\ClienteModel.cs" />
     <Compile Include="Models\formsModels\LoginFuncModel.cs" />
     <Compile Include="Models\formsModels\loginModel.cs" />
+    <Compile Include="Models\FuncCadastroModel.cs" />
     <Compile Include="Models\FuncModel.cs" />
     <Compile Include="Models\Produto.cs" />
     <Compile Include="Models\ReservaCadastroModel.cs" />
@@ -254,6 +256,9 @@
     <Content Include="Views\LoginFunc\LoginFunc.cshtml" />
     <Content Include="Views\Produto\Produto.cshtml" />
     <Content Include="Views\Reserva\CadastroReserva.cshtml" />
+    <Content Include="Views\Shared\_LayoutLogadoMan.cshtml" />
+    <Content Include="Views\Home\IndexLogadoMan.cshtml" />
+    <Content Include="Views\CadastroFunc\CadastroFunc.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
