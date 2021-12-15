@@ -13,6 +13,53 @@ namespace TCCGWT.Controllers
     public class CadastroFuncController : Controller
     {
         // GET: CadastroFunc
+        string baseurl = "http://20.114.208.185";
+        public async Task<ActionResult> Funcionarios()
+        {
+            List<FuncModel> FuncInfo = new List<FuncModel>();
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseurl);
+                client.DefaultRequestHeaders.Clear();
+                HttpResponseMessage Res = await client.GetAsync("api/Funcionario");
+                if (Res.IsSuccessStatusCode)
+                {
+                    var FuncResponse = Res.Content.ReadAsStringAsync().Result;
+
+                    if (FuncResponse == null)
+                    {
+                        throw new InvalidOperationException();
+                    }
+                    FuncInfo = JsonConvert.DeserializeObject<List<FuncModel>>(FuncResponse);
+                }
+                return View(FuncInfo);
+            }
+        }
+
+        public ActionResult EditFunc(int id)
+        {
+            FuncModel func = null;
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("http://20.114.208.185/api/");
+
+                var responsetask = client.GetAsync("funcionario/" + id.ToString());
+                responsetask.Wait();
+
+                var result = responsetask.Result;
+                if(result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsAsync<FuncModel>();
+                    readTask.Wait();
+
+                    func = readTask.Result;
+                }
+
+            }
+
+            return View(func);
+        }
+
         public ActionResult CadastroFunc()
         {
             return View();
