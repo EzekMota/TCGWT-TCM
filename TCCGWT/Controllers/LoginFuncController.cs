@@ -44,6 +44,10 @@ namespace TCCGWT.Controllers
                     Response.Cookies["FuncName"].Value = res.NomeFunc.ToString();
                     Response.Cookies["FuncId"].Value = res.IdFunc.ToString();
 
+                    if(res.IdFunc == 1)
+                    {
+                        return RedirectToAction("IndexLogadoMan", "Home");
+                    }
                     return RedirectToAction("IndexLogadoFunc", "Home");
                 }
             }
