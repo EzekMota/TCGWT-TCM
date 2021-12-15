@@ -36,6 +36,26 @@ namespace TCCGWT.Controllers
             }
         }
 
+        public ActionResult Delete(int id)
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("http://20.114.208.185/api/");
+                var deletetask = client.DeleteAsync("funcionario/" + id.ToString());
+                deletetask.Wait();
+
+                var result = deletetask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Funcionarios");
+                }
+
+            }
+
+            return RedirectToAction("Funcionarios");
+        }
+    
+
         public ActionResult EditFunc(int id)
         {
             FuncModel func = null;
@@ -59,6 +79,30 @@ namespace TCCGWT.Controllers
 
             return View(func);
         }
+
+
+        [HttpPost]
+        public ActionResult EditFunc(FuncModel funcionario)
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("http://20.114.208.185/api/");
+
+                //HTTP POST
+                var putTask = client.PutAsJsonAsync<FuncModel>("funcionario", funcionario);
+                putTask.Wait();
+
+                var result = putTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+
+                    return RedirectToAction("Funcionarios");
+                }
+            }
+            return View(funcionario);
+        }
+
+        
 
         public ActionResult CadastroFunc()
         {
